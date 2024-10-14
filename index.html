@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lesson</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<!-- Exercise 1 -->
+    <h1 id="demo">What can JavaScript Do?</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'JavaScript can do many things'">Click Me!</button> <br>
+
+<!-- Exercise 2 -->
+    <button onclick="document.getElementById('myImage').src='/Users/sabinasagalova/NewFolder/v_bts-kqZN_large.jpg'">Blue Background</button>
+    <img id="myImage" src="/Users/sabinasagalova/NewFolder/v_bts-kqZN_large.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='/Users/sabinasagalova/NewFolder/1677601650-fclg6oevqaa-tgr.jpg'">Orange Background</button>
+
+<!-- Exercise 3 -->
+    <p id="bold">Kim Taehyeng was born in 1995</p>
+    <button type="button" onclick="document.getElementById('bold').style.fontWeight='bold'">SHOW ME BOLD!</button> <br>
+
+<!-- Exercise 4 -->
+
+    <button id="show">Show Today's Date</button>
+    <button id="hide">Hide Today's Date</button>
+    <div id="text-4">10th October <span id="currentDate"></span></div>
+
+<!-- Exercise 7 -->
+<p id="Par" style="font-weight: bold;"></p>
+
+<!-- Exercise 8 -->
+<p id="Date"></p>
+
+<!-- Exercise 9 -->
+<p id="Year"></p>
+
+<!-- Exercise 10 -->
+<div class="ten">
+    <div class="form">
+      <label for="num1">1st Number</label>
+      <input type="number" id='num1'> <br>
+      <label for="num2">2nd Number</label>
+      <input type="number" id='num2'>
+
+      <input type="button" onClick="multiplyBy()" id = 'multiply' value = 'multiply'>
+      <input type="button" onClick="divideBy()" id = 'devide' value = 'divide'>
+    </div>
+    <h3 id="result">The result is:</h3>
+  </div>
+
+<!-- Exercise 11 -->
+ <h1>Exercise 11</h1>
+<p>Enter Celsius: <input type="number" id="IntC"></p>
+<p>Enter Fahrenheit: <input type="number" id="IntF"></p>
+
+<button onclick="ToF()">Convert to Fahrenheit</button>
+<button onclick="ToC()">Convert to Celsius</button>
+<p id="temp"></p>
+
+<!-- Exercise 12 -->
+<h1>Exercise 12</h1>
+<p>Enter Number to Check If it Even or Odd: <input type="number" id="IntNum"></p>
+
+<button onclick="CheckEvenOdd()">Check Even or Odd</button>
+<p id="check"></p>
+
+<!-- Exercise 13 -->
+<p>Enter First Number: <input type="number" id="number1"></p>
+<p>Enter Second Number: <input type="number" id="number2"></p>
+<p>Enter Third Number: <input type="number" id="number3"></p>
+
+<button onclick="findLargestLeast()">Check Largest and Least</button>
+<p id="find"></p>
+
+<!-- Exercise 14 -->
+<h1>Calculate Triangle Area (Heron's Formula)</h1>
+
+<p>Enter Side A: <input type="number" id="sideA"></p>
+<p>Enter Side B: <input type="number" id="sideB"></p>
+<p>Enter Side C: <input type="number" id="sideC"></p>
+
+<button onclick="calculateArea()">Calculate Area</button>
+<p id="rslt"></p>
+
+<!-- Exercise 15 -->
+<h1>Factorial Calculator</h1>
+<p>Enter a number: <input type="number" id="numInput"></p>
+<button onClick="func()">Click to get factorial</button> 
+<p id="resultfact"></p> 
+
+<!-- Exercise 16 -->
+<h1>Count Vowels and Consonants</h1>
+<p>Enter a string: <input type="text" id="inputString"></p>
+<button onClick="countVowelsAndConsonants()">Count</button> 
+<p id="final"></p> 
+
+<!-- Exercise 17 -->
+<h1>Converting Time</h1>
+<p>Enter seconds: <input type="number" id="secondsInput"></p>
+<button onClick="timeConvert()">Convert</button>
+<p id="res"></p>
+
+<!-- Exercise 18 -->
+<h1>Find the Most Frequent Number</h1>
+<p>Enter numbers: <input type="text" id="numbersInput"></p>
+<button onClick="findMostFrequent()">Find Most Frequent</button>
+<p id="end"></p>
+
+<!-- Exercise 19 -->
+<h1>Fibonacci Sequence</h1>
+<p>Enter the number: <input type="number" id="int"></p>
+<button onClick="calculateFibonacci()">Show Sequence</button>
+<p id="sequence"></p>
+
+<!-- Exercise 20 -->
+<h1>Calculate Days Until New Year</h1>
+<button onClick="countDays()">Days Left</button>
+<p id="days"></p>
+
+<!-- Exercise 5 -->
+<script src="./index.js"> </script>
+</body>
+</html>
+
+
